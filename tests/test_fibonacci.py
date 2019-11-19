@@ -36,3 +36,7 @@ def test_5_for_4():
 def test_6_for_10():
     """Test to check what value is returned for 10"""
     assert [fib for fib in Fibonacci(10)] == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+def test_7_for_negative():
+    """Test to check an empty list is returned on entering a negative number"""
+    assert [fib for fib in Fibonacci(-10)] == []
