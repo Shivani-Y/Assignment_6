@@ -35,4 +35,12 @@ class Fibonacci:
             self.iteration_count += 1
             return self.number_2
 
+        if self.iteration_count > 1:#if limit is a +int (not 0 0r 1) and iteration_count
+        #is more than 1 then add to counter and return sum of last 2 digits
+            self.sum_of_last_two_digits = self.number_1 + self.number_2
+            self.number_1 = self.number_2
+            self.number_2 = self.sum_of_last_two_digits
+            self.iteration_count += 1
+            return self.sum_of_last_two_digits
+
         return None
