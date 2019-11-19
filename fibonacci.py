@@ -26,3 +26,9 @@ class Fibonacci:
         if self.iteration_count > self.limit:#if the iterations add up tp more
         #than the limit the iterator stops
             raise StopIteration
+
+        if self.iteration_count == 0:#if limit is 0 then return 0 and add to counter
+            self.iteration_count += 1
+            return self.number_1
+
+        return None

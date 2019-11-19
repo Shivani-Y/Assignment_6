@@ -16,3 +16,7 @@ def test_1_limit_type():
     with pytest.raises(ValueError):
         if not isinstance(fib, int):
             raise ValueError("Function only workS for Integers")
+
+def test_2_for_0():
+    """Test to check what value is returned for 0"""
+    assert [fib for fib in Fibonacci(0)] == [0]
