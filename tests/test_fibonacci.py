@@ -28,3 +28,7 @@ def test_3_for_1():
 def test_4_for_2():
     """Test to check what value is returned for 2"""
     assert [fib for fib in Fibonacci(2)] == [0, 1, 1]
+
+def test_5_for_4():
+    """Test to check what value is returned for 4"""
+    assert [fib for fib in Fibonacci(4)] == [0, 1, 1, 2, 3]
