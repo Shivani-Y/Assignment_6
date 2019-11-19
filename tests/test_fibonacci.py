@@ -20,3 +20,7 @@ def test_1_limit_type():
 def test_2_for_0():
     """Test to check what value is returned for 0"""
     assert [fib for fib in Fibonacci(0)] == [0]
+
+def test_3_for_1():
+    """Test to check what value is returned for 1"""
+    assert [fib for fib in Fibonacci(1)] == [0, 1]

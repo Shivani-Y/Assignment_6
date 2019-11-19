@@ -31,4 +31,8 @@ class Fibonacci:
             self.iteration_count += 1
             return self.number_1
 
+        if self.iteration_count == 1:#if limit is 1 then return 1 and add to counter
+            self.iteration_count += 1
+            return self.number_2
+
         return None
